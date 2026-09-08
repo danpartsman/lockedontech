@@ -193,7 +193,7 @@
 
     .intro-split { display:grid; grid-template-columns: 1.05fr .95fr; gap:28px; align-items:end; margin-bottom:30px; }
     .intro-split .section-lead { margin-bottom:0; }
-    .inline-photo { position:relative; width:52%; min-height:150px; justify-self:center; align-self:center; border-radius:22px; overflow:hidden; border:1px solid var(--line); background:#081426; box-shadow:0 16px 44px rgba(0,0,0,.17); }
+    .inline-photo { position:relative; min-height:290px; border-radius:26px; overflow:hidden; border:1px solid var(--line); background:#081426; box-shadow:0 16px 44px rgba(0,0,0,.17); }
     .inline-photo img { width:100%; height:100%; object-fit:cover; display:block; }
     .inline-photo:after { content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(4,8,14,.03), rgba(4,8,14,.18)); }
 
@@ -220,7 +220,7 @@
     .xp-no { color:var(--cyan); font-weight:900; font-size:.85rem; }
     .xp h3 { margin:0 0 5px; font-size:1.08rem; }
     .xp p { margin:0; color:var(--muted); font-size:.9rem; }
-    .xp-photo { width:52%; min-height:115px; justify-self:center; border-radius:18px; overflow:hidden; border:1px solid var(--line); box-shadow:0 16px 44px rgba(0,0,0,.17); }
+    .xp-photo { min-height:220px; border-radius:20px; overflow:hidden; border:1px solid var(--line); box-shadow:0 16px 44px rgba(0,0,0,.17); }
     .xp-photo img { width:100%; height:100%; object-fit:cover; display:block; }
 
     .process { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; }
@@ -230,11 +230,11 @@
     .step h3 { margin:9px 0 7px; font-size:1.12rem; }
     .step p { color:var(--muted); font-size:.86rem; margin:0; }
     .approach-rail { width:58%; margin:34px auto 0; display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
-    .rail-photo { min-height:100px; border-radius:16px; overflow:hidden; border:1px solid var(--line); }
+    .rail-photo { min-height:180px; border-radius:18px; overflow:hidden; border:1px solid var(--line); }
     .rail-photo img { width:100%; height:100%; object-fit:cover; display:block; }
 
     .about-grid { display:grid; grid-template-columns:1fr; gap:24px; align-items:start; }
-    .about-photo { width:min(52%, 390px); height:140px; min-height:140px; border-radius:20px; overflow:hidden; border:1px solid var(--line); box-shadow:0 16px 44px rgba(0,0,0,.17); align-self:start; justify-self:start; }
+    .about-photo { width:min(100%, 760px); height:260px; min-height:260px; border-radius:var(--radius); overflow:hidden; border:1px solid var(--line); box-shadow:0 16px 44px rgba(0,0,0,.17); align-self:start; }
     .about-photo img { width:100%; height:100%; object-fit:cover; object-position:center 42%; display:block; }
     .credentials { display:grid; grid-template-columns:1.35fr .65fr; gap:28px; align-items:start; }
     .credential-panel { border:1px solid var(--line); border-radius:var(--radius); padding:30px; background:rgba(255,255,255,.025); }
@@ -267,9 +267,6 @@
       .nav > .btn { display:none; }
       .hero { padding-top:72px; min-height:auto; }
       .hero-grid, .intro-split, .split, .about-grid, .credentials, .cta { grid-template-columns:1fr; }
-      .inline-photo, .xp-photo { width:min(72%, 520px); }
-      .approach-rail { width:min(82%, 620px); }
-      .about-photo { width:min(72%, 390px); }
       .services-grid { grid-template-columns:repeat(2,1fr); }
       .band-grid, .process, .approach-rail { grid-template-columns:repeat(2,1fr); }
       .band-item:nth-child(2) { border-right:0; }
@@ -283,9 +280,7 @@
       .wrap { width:min(calc(100% - 26px),var(--max)); }
       h1 { font-size:3.25rem; }
       .hero-grid { gap:36px; }
-      .about-photo { width:min(88%, 390px); height:140px; min-height:140px; }
-      .inline-photo, .xp-photo { width:88%; }
-      .approach-rail { width:92%; }
+      .about-photo { width:100%; height:220px; min-height:220px; }
       .services-grid, .featured, .band-grid, .process, .approach-rail { grid-template-columns:1fr; }
       .aud { grid-template-columns:1fr; gap:8px; }
       .band-item { border-right:0; border-bottom:1px solid var(--line); padding:14px 0; }
